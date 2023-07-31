@@ -1,17 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {Test} from 'types'
+import {Spinner} from "./components/spinner/Spinner";
 
 
 export const App = () => {
-    const foobar: Test = {
-        x: 123
-    }
+
   return (
       <div className="App">
         <header className="App-header">
-          <div>Hejka</div>
+          <Spinner/>
         </header>
       </div>
   );
