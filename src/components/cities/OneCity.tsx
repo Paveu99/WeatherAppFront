@@ -28,19 +28,19 @@ export const OneCity = (props: Props) => {
                 </div>
                 <div className="spec">
                     <div className="desc">Ilość opadów</div>
-                    <div className="value">{props.city.suma_opadu}</div>
+                    <div className="value">{props.city.suma_opadu} mm</div>
                 </div>
                 <div className="spec">
                     <div className="desc">Wilgotność</div>
-                    <div className="value">{props.city.wilgotnosc_wzgledna}</div>
+                    <div className="value">{props.city.wilgotnosc_wzgledna} g/m³</div>
                 </div>
                 <div className="spec">
                     <div className="desc">Kierunek wiatru</div>
-                    <div className="value">{props.city.kierunek_wiatru}</div>
+                    <div className="value">{props.city.kierunek_wiatru}°</div>
                 </div>
                 <div className="spec">
                     <div className="desc">Prędkość wiatru</div>
-                    <div className="value">{props.city.predkosc_wiatru}</div>
+                    <div className="value">{props.city.predkosc_wiatru} km/h</div>
                 </div>
             </div>
     </>
