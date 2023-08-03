@@ -1,0 +1,6 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+}
+.animate-flicker {
+    animation: fadeIn 2.5s infinite alternate;
+}
