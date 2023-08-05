@@ -2,5 +2,7 @@
     from { opacity: 0; }
 }
 .animate-flicker {
+    height: 300px;
+    transform: scale(0.7);
     animation: fadeIn 2.5s infinite alternate;
 }

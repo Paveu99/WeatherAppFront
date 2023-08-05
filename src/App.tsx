@@ -1,18 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {Test} from 'types'
-
+import React, {useState} from 'react';
+import {CitiesList} from "./components/cities/CitiesList";
+import './App.css'
+import {LottieView} from "./views/LottieView";
+import { SearchComp } from './components/search/SearchComp';
+import { MainText } from './views/MainText';
+import {DownloadBttn} from "./components/download/DownloadBttn";
+import { SearchContext } from './components/search/SearchContext';
 
 export const App = () => {
-    const foobar: Test = {
-        x: 123
-    }
-  return (
-      <div className="App">
-        <header className="App-header">
-          <div>Hejka</div>
-        </header>
-      </div>
-  );
+
+    const [search, setSearch] = useState('')
+
+    return (
+        <SearchContext.Provider value={{search, setSearch}}>
+            <LottieView/>
+            <MainText/>
+            <SearchComp/>
+            <DownloadBttn/>
+            <CitiesList/>
+        </SearchContext.Provider>
+  )
 }
