@@ -11,7 +11,7 @@ body {
 }
 
 .container {  display: grid;
-    font-family: "Calibri Light";
+    font-family: 'Fira Code', monospace;
     color: white;
     margin: 5px;
     padding: 10px;
@@ -79,7 +79,7 @@ body {
     padding: 4px;
     text-transform: uppercase;
     font-size: 10px;
-    font-family: Arial;
+    font-family: 'Fira Code', monospace;
 }
 .bold {
     font-weight: bold;
