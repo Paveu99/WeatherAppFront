@@ -19,7 +19,7 @@ export const OneCity = (props: Props) => {
             </div>
             <div className="specific">
                 <div className="spec">
-                    <div className="desc">Czas pomiaru</div>
+                    <div className="desc">Godzina pomiaru</div>
                     <div className="value">{props.city.godzina_pomiaru}:00</div>
                 </div>
                 <div className="spec">
