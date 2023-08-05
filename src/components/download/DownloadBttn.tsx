@@ -40,7 +40,7 @@ export const DownloadBttn = () => {
                 downloadxls(e, cities);
             }}
         >
-            Pobierz raport
+            Pobierz raport o wszystkich miastach
         </button>
     </p>
 }

@@ -1,5 +1,5 @@
 .btn{
-
+    display: inline-block;
     font-family: 'Fira Code', monospace;
     font-weight: 0;
     font-size: 14px;
@@ -14,14 +14,18 @@
     flex-direction: row;
     align-items: center;
     cursor: pointer;
+    text-align: center;
+    margin: 5px;
 }
 
 .btn:hover{
-
     transition : 1000ms;
     padding: 10px 50px;
     transform : translateY(-0px);
     background-color: #fff;
     color: #0066cc;
     border: solid 2px #0066cc;
+}
+::placeholder {
+    color: white;
 }
