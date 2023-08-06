@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import {CitiesList} from "../components/cities/CitiesList";
 import Lottie from "react-lottie"
 import '../components/styles/Lottie.css'
 import animationData1 from '../lotties/1.json'
