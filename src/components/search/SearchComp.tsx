@@ -27,7 +27,7 @@ export const SearchComp = () => {
                 value={inputVal}
                 onChange={e => setInputVal(e.target.value)}
             />
-            <button className="btn" type="reset" onClick={setSearchToEmpty} title="Odświerz"><ClipLoader size={9}/></button>
+            <button className="btn-reset" type="reset" onClick={setSearchToEmpty} title="Odświerz"><ClipLoader size={9}/></button>
             <button className="btn" type="submit">Wyszukaj</button>
         </form>
     </>

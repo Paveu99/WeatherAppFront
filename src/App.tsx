@@ -10,6 +10,7 @@ import {Header} from "./components/header/Header";
 import {Route, Routes } from 'react-router-dom';
 import {CitiesView} from "./views/CitiesView";
 import { InfoView } from './views/InfoView';
+import {NotFoundView} from "./views/NotFoundView";
 
 export const App = () => {
 
@@ -21,6 +22,7 @@ export const App = () => {
             <Routes>
                 <Route path='/' element={<CitiesView/>}/>
                 <Route path='/info' element={<InfoView/>}/>
+                <Route path='*' element={<NotFoundView/>}/>
             </Routes>
         </SearchContext.Provider>
   )
