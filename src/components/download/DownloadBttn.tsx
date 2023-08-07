@@ -40,5 +40,6 @@ export const DownloadBttn = () => {
         >
             Pobierz raport o wszystkich miastach
         </button>
+        <button className="downloadbttn" onClick={() => window.location.reload()}>Odświerz</button>
     </p>
 }

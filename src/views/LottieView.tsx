@@ -70,8 +70,8 @@ export const LottieView = () => {
         <header className="animate-flicker">
             <Lottie
                 options={images[currentIndex]}
-                height={400}
-                width={400}
+                height={300}
+                width={300}
             />
         </header>
     </>
