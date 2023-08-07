@@ -8,27 +8,19 @@ export const SearchComp = () => {
 
     const [inputVal, setInputVal] = useState<string>(search)
 
-    const setSearchFromLocalState = (e: FormEvent) => {
-        e.preventDefault()
-        setSearch(inputVal)
-    }
-    const setSearchToEmpty = (e: FormEvent) => {
-        e.preventDefault()
-        setSearch('')
-        setInputVal('')
-    }
-
     return <>
-        <form onSubmit={setSearchFromLocalState}>
+        <form>
             <input
                 className="btn"
-                type = "text"
+                type = "search"
                 placeholder = "Wpisz nazwę miasta"
                 value={inputVal}
-                onChange={e => setInputVal(e.target.value)}
+                onChange={e => {
+                    setInputVal(e.target.value)
+                    setSearch(e.target.value)
+                }
+            }
             />
-            <button className="btn-reset" type="reset" onClick={setSearchToEmpty} title="Resetuj"><ClipLoader size={9}/></button>
-            <button className="btn" type="submit">Wyszukaj</button>
         </form>
     </>
 
