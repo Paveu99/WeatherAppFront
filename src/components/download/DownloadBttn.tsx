@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from "react";
-import * as fs from "fs/promises"
-import * as path from 'path'
 import * as XLSX from 'xlsx'
 import { CityEntity } from "types";
 import '../styles/DownloadBttn.css'
@@ -42,5 +40,6 @@ export const DownloadBttn = () => {
         >
             Pobierz raport o wszystkich miastach
         </button>
+        <button className="downloadbttn" onClick={() => window.location.reload()}>Odświerz</button>
     </p>
 }

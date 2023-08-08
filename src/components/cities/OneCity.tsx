@@ -6,13 +6,14 @@ interface Props {
 }
 export const OneCity = (props: Props) => {
 
-    const response = <>
+    const response = <div className="flip-card">
+        <div className="flip-card-inner">
             <div className="general">
-                <div className="spec">
+                <div className="spec-gen">
                     <div className="desc">Miasto</div>
                     <div className="value bold">{props.city.stacja}</div>
                 </div>
-                <div className="spec">
+                <div className="spec-gen">
                     <div className="desc">Temperatura</div>
                     <div className="value bold">{props.city.temperatura}°C</div>
                 </div>
@@ -43,7 +44,8 @@ export const OneCity = (props: Props) => {
                     <div className="value">{props.city.predkosc_wiatru} km/h</div>
                 </div>
             </div>
-    </>
+        </div>
+    </div>
 
     return <>
         {response}

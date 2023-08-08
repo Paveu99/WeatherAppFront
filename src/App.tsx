@@ -6,6 +6,11 @@ import { SearchComp } from './components/search/SearchComp';
 import { MainText } from './views/MainText';
 import {DownloadBttn} from "./components/download/DownloadBttn";
 import { SearchContext } from './components/search/SearchContext';
+import {Header} from "./components/header/Header";
+import {Route, Routes } from 'react-router-dom';
+import {CitiesView} from "./views/CitiesView";
+import { InfoView } from './views/InfoView';
+import {NotFoundView} from "./views/NotFoundView";
 
 export const App = () => {
 
@@ -13,11 +18,12 @@ export const App = () => {
 
     return (
         <SearchContext.Provider value={{search, setSearch}}>
-            <LottieView/>
-            <MainText/>
-            <SearchComp/>
-            <DownloadBttn/>
-            <CitiesList/>
+            <Header/>
+            <Routes>
+                <Route path='/' element={<CitiesView/>}/>
+                <Route path='/info' element={<InfoView/>}/>
+                <Route path='*' element={<NotFoundView/>}/>
+            </Routes>
         </SearchContext.Provider>
   )
 }

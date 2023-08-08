@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import {CitiesList} from "../components/cities/CitiesList";
 import Lottie from "react-lottie"
 import '../components/styles/Lottie.css'
 import animationData1 from '../lotties/1.json'
@@ -71,8 +70,8 @@ export const LottieView = () => {
         <header className="animate-flicker">
             <Lottie
                 options={images[currentIndex]}
-                height={400}
-                width={400}
+                height={300}
+                width={300}
             />
         </header>
     </>
