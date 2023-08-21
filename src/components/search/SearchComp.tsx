@@ -1,5 +1,4 @@
-import React, {FormEvent, useContext, useEffect, useState} from "react";
-import { ClipLoader } from "react-spinners";
+import React, {FormEvent, useContext, useState} from "react";
 import '../styles/Search.css'
 import {SearchContext} from "./SearchContext";
 export const SearchComp = () => {
@@ -8,8 +7,12 @@ export const SearchComp = () => {
 
     const [inputVal, setInputVal] = useState<string>(search)
 
+    function submitHandler(e: FormEvent) {
+        e.preventDefault();
+    }
+
     return <>
-        <form>
+        <form onSubmit={submitHandler}>
             <input
                 className="btn"
                 type = "search"
