@@ -7,6 +7,7 @@ A responsive web app that allows you to check weather in 62 Polish towns. By typ
 
 <img width="1280" alt="image" src="https://github.com/Paveu99/WeatherAppFront/assets/100468919/eb9d8824-4102-4063-9e1c-da273fe85340">
 
+Application as a whole is split into 2 sides: backend and frontend, which are contected via cors policy. Moreover types from backend are send to frontend thanks to customize-cra.
 
 # Table of content
 - Demo
